@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="479dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="108dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Birinci sayıyı giriniz"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="İkinci sayıyı giriniz"
+            android:inputType="textPersonName"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="409dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="55dp"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ikincisayi">
+
+            <Button
+                android:id="@+id/topla"
+                android:layout_width="56dp"
+                android:layout_height="52dp"
+                android:background="#1192FA"
+                android:backgroundTint="#000000"
+                android:onClick="topla"
+                android:text="+"
+                android:textSize="25sp" />
+
+            <Button
+                android:id="@+id/cikar"
+                android:layout_width="53dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="15dp"
+                android:background="#1192FA"
+                android:backgroundTint="#000000"
+                android:onClick="cikar"
+                android:text="-"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/topla" />
+
+            <Button
+                android:id="@+id/carp"
+                android:layout_width="53dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="15dp"
+                android:background="#1192FA"
+                android:backgroundTint="#000000"
+                android:onClick="carp"
+                android:text="x"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/cikar" />
+
+            <Button
+                android:id="@+id/bolme"
+                android:layout_width="53dp"
+                android:layout_height="51dp"
+                android:layout_marginStart="15dp"
+                android:background="#1192FA"
+                android:backgroundTint="#000000"
+                android:onClick="bolme"
+                android:text=":"
+                android:textSize="25sp"
+                app:layout_constraintStart_toEndOf="@+id/carp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/sonuc"
+            android:layout_width="178dp"
+            android:layout_height="61dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
